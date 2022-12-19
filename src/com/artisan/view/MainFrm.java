@@ -164,6 +164,7 @@ public class MainFrm extends JFrame {
 
 		JLabel label_1 = new JLabel("作品名称");
 
+
 		worksTable = new JTable();
 		worksTable.addMouseListener(new MouseAdapter() {
 			@Override
@@ -194,6 +195,7 @@ public class MainFrm extends JFrame {
 
 	/**
 	 * 表格行点击事件处理
+	 *
 	 */
 	private void worksTableMousePressed(MouseEvent evt) {
 		int row=worksTable.getSelectedRow();
@@ -204,6 +206,7 @@ public class MainFrm extends JFrame {
 
 	/**
 	 * 作品信息搜索事件处理
+	 *
 	 */
 	private void worksSearchActionPerformed(ActionEvent evt) {
 		String s_workName=this.s_workNameTxt.getText();
@@ -214,6 +217,7 @@ public class MainFrm extends JFrame {
 
 	/**
 	 * 初始化表格
+	 *
 	 */
 	private void fillTable(works works){
 		DefaultTableModel dtm=(DefaultTableModel) worksTable.getModel();

@@ -2,6 +2,7 @@ package com.artisan.model;
 
 /**
  * 作品实体
+ *
  */
 public class works {
 

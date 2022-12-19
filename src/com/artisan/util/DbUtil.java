@@ -8,6 +8,7 @@ import java.sql.DriverManager;
 /**
  * 数据库工具类
  *
+ *
  */
 public class DbUtil {
 
@@ -18,6 +19,7 @@ public class DbUtil {
 	
 	/**
 	 * 获取数据库连接
+	 *
 	 */
 	public Connection getCon()throws Exception{
 		Class.forName(jdbcName);
@@ -27,6 +29,7 @@ public class DbUtil {
 	
 	/**
 	 * 关闭数据库连接
+	 *
 	 */
 	public void closeCon(Connection con)throws Exception{
 		if(con!=null){

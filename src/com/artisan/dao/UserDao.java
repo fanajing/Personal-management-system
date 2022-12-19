@@ -9,11 +9,13 @@ import com.artisan.model.User;
 
 /**
  * 用户Dao类
+ *
  */
 public class UserDao {
 
 	/**
 	 * 登录验证
+	 *
 	 */
 	public User login(Connection con,User user)throws Exception{
 		User resultUser=null;

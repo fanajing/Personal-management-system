@@ -10,11 +10,13 @@ import com.artisan.util.StringUtil;
 
 /**
  * 作品Dao类
+ *
  */
 public class worksDao {
 
 	/**
 	 * 作品添加
+	 *
 	 * */
 	public int add(Connection con, works schoolClass)throws Exception{
 		String sql="insert into t_works values(null,?,?)";
@@ -27,6 +29,7 @@ public class worksDao {
 	
 	/**
 	 * 查询作品集合
+	 *
 	 */
 	public ResultSet list(Connection con, works schoolClass)throws Exception{
 		StringBuffer sb=new StringBuffer("select * from t_works");
@@ -39,6 +42,7 @@ public class worksDao {
 	
 	/**
 	 * 删除作品
+	 *
 	 */
 	public int delete(Connection con,String id)throws Exception{
 		String sql="delete from t_works where id=?";
@@ -49,6 +53,7 @@ public class worksDao {
 
 	/**
 	 * 更新作品
+	 *
 	 */
 	public int update(Connection con, works schoolClass)throws Exception{
 		String sql="update t_works set worksName=?,worksDesc=? where id=?";

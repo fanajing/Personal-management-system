@@ -2,6 +2,7 @@ package com.artisan.model;
 
 /**
  * 用户实体
+ *
  */
 public class User {
 

@@ -147,6 +147,7 @@ public class LogOnFrm extends JFrame {
 
 	/**
 	 * 登录事件处理
+	 *
 	 */
 	private void loginActionPerformed(ActionEvent evt) {
 		String userName=this.userNameTxt.getText();
@@ -185,6 +186,7 @@ public class LogOnFrm extends JFrame {
 
 	/**
 	 * 重置事件处理
+	 *
 	 */
 	private void resetValueActionPerformed(ActionEvent evt) {
 		this.userNameTxt.setText("");
