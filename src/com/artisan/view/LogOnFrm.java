@@ -33,9 +33,6 @@ public class LogOnFrm extends JFrame {
 	private DbUtil dbUtil=new DbUtil();
 	private UserDao userDao=new UserDao();
 
-	/**
-	 * Launch the application.
-	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -49,9 +46,7 @@ public class LogOnFrm extends JFrame {
 		});
 	}
 
-	/**
-	 * Create the frame.
-	 */
+
 	public LogOnFrm() {
 		//改变系统默认字体
 		Font font = new Font("Dialog", Font.PLAIN, 12);
@@ -152,7 +147,6 @@ public class LogOnFrm extends JFrame {
 
 	/**
 	 * 登录事件处理
-	 * @param e
 	 */
 	private void loginActionPerformed(ActionEvent evt) {
 		String userName=this.userNameTxt.getText();
@@ -191,7 +185,6 @@ public class LogOnFrm extends JFrame {
 
 	/**
 	 * 重置事件处理
-	 * @param e
 	 */
 	private void resetValueActionPerformed(ActionEvent evt) {
 		this.userNameTxt.setText("");

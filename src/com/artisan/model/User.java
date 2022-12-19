@@ -2,8 +2,6 @@ package com.artisan.model;
 
 /**
  * 用户实体
- * @author Administrator
- *
  */
 public class User {
 

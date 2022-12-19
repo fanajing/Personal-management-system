@@ -44,9 +44,8 @@ public class MainFrm extends JFrame {
 
 
 	ImageIcon image;
-	/**
-	 * Create the frame.
-	 */
+
+
 	public MainFrm(){
 		image = new ImageIcon("src/images/bg.png");
 		//设置组件透明
@@ -195,7 +194,6 @@ public class MainFrm extends JFrame {
 
 	/**
 	 * 表格行点击事件处理
-	 * @param e
 	 */
 	private void worksTableMousePressed(MouseEvent evt) {
 		int row=worksTable.getSelectedRow();
@@ -205,8 +203,7 @@ public class MainFrm extends JFrame {
 	}
 
 	/**
-	 * 班级信息搜索事件处理
-	 * @param evt
+	 * 作品信息搜索事件处理
 	 */
 	private void worksSearchActionPerformed(ActionEvent evt) {
 		String s_workName=this.s_workNameTxt.getText();
@@ -217,7 +214,6 @@ public class MainFrm extends JFrame {
 
 	/**
 	 * 初始化表格
-	 * @param works
 	 */
 	private void fillTable(works works){
 		DefaultTableModel dtm=(DefaultTableModel) worksTable.getModel();
@@ -278,10 +274,10 @@ public class MainFrm extends JFrame {
 	private void DeleteActionEvent(ActionEvent evt) {
 		String id=idTxt.getText();
 		if(StringUtil.isEmpty(id)){
-			JOptionPane.showMessageDialog(null, "请选择要删除的记录");
+			JOptionPane.showMessageDialog(null, "请选择要删除的作品");
 			return;
 		}
-		int n=JOptionPane.showConfirmDialog(null, "确定要删除该记录吗？");
+		int n=JOptionPane.showConfirmDialog(null, "确定要删除该作品吗？");
 		if(n==0){
 			Connection con=null;
 			try{

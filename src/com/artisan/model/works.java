@@ -1,15 +1,13 @@
 package com.artisan.model;
 
 /**
- * 班级实体
- * @author llq-artisan
- *
+ * 作品实体
  */
 public class works {
 
 	private int id; // 编号
-	private String worksName; // 班级名称
-	private String worksDesc; // 备注
+	private String worksName; // 作品名称
+	private String worksDesc; // 作品简介
 	
 	
 	

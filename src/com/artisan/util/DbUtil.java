@@ -7,20 +7,17 @@ import java.sql.DriverManager;
 
 /**
  * 数据库工具类
- * @author Administrator
  *
  */
 public class DbUtil {
 
 	private String dbUrl="jdbc:mysql://localhost:3306/db_works?characterEncoding=utf8"; // 数据库连接地址
-	private String dbUserName="root"; // 用户名,填写你自己的数据库用户名
-	private String dbPassword="2510519819"; // 密码，你自己的用户名密码，这个就是我的，所以我不修改了
+	private String dbUserName="root"; // 用户名
+	private String dbPassword="2510519819"; // 密码
 	private String jdbcName="com.mysql.jdbc.Driver"; // 驱动名称
 	
 	/**
 	 * 获取数据库连接
-	 * @return
-	 * @throws Exception
 	 */
 	public Connection getCon()throws Exception{
 		Class.forName(jdbcName);
@@ -30,8 +27,6 @@ public class DbUtil {
 	
 	/**
 	 * 关闭数据库连接
-	 * @param con
-	 * @throws Exception
 	 */
 	public void closeCon(Connection con)throws Exception{
 		if(con!=null){
